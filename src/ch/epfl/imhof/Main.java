@@ -99,6 +99,10 @@ public final class Main {
         BufferedImage paintedMap = canvas.image();
         // Combinaison de carte et du relief par multiplications des composantes
         // deux à deux.
+
+        // Corto 2019 : carte sans le relief
+        ImageIO.write(paintedMap, "png", new File("paintedMap.png"));
+        
         createImage(args, dem, relief, canvas, paintedMap);
     }
 
@@ -113,6 +117,8 @@ public final class Main {
                 paintedMap.setRGB(x, y, mixedColor.toAWTColor().getRGB());
             }
         }
+        // Corto 2019 : debug flou non applique sur relief
+        ImageIO.write(relief, "png", new File("relief.png"));
         // Ecrit le résultat au format PNG dans le fichier donnée en argument.
         ImageIO.write(canvas.image(), "png", new File(args[7]));
         // Fermeture du fichier HGT contenant le modèle numérique de terrain.
