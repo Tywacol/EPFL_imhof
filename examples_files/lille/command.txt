@@ -1,0 +1,1 @@
+java -cp . ch.epfl.imhof.Main interlaken.osm.gz N46E007.hgt 6.5646 46.4921 6.6693 46.5466 600 lille600dpi.png

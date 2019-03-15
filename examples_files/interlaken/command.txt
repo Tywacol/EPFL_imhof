@@ -1,0 +1,1 @@
+java -cp . ch.epfl.imhof.Main interlaken_high.osm.gz N46E007.hgt 7.7248 46.6348 7.9943 46.7377 300 interlakenhighHD300.png
