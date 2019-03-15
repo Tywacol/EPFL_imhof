@@ -44,7 +44,7 @@ Arguments
 ```bash
 java Main osmFile.osm.gz, hgtFile.hgt, botLeftLon, botLeftLat, topRightLong, topRightLat, rDpi, output_name
 ```
-osmFile : the compressed data corresponding to the desired area. To create one go to <www.openstreetmap.org>, chose the location and the dimensions than click the export button.
+*osmFile.osm.gz* : the compressed data corresponding to the desired area. To create one go to <www.openstreetmap.org>, chose the location and the dimensions than click the export button.
 
 Note : since a single .hgt file can contains data for a square of 1 of longitude and 1 of lattitude, the latittude and longitude of the area you chosen must be contained within 1 of each other. Example: the coordinate for interlaken are 
 7.7248 -> 7.994 in longitude and 46.6348 -> 46.7377 in latitude, it's in N46E007.hgt. Here 6.9999 -> 7.994 wouldn't work. 
@@ -54,11 +54,13 @@ To compress the file on linux, run :
 ```bash
 gzip map.osm 
 ```
-The hgt file can be downloaded from <http://viewfinderpanoramas.org/dem3.html>. Choose your regions than click on the interactive map to download the file. You may need to extract it. Note that there is 3 resolutions available : 1" 3" and 15" (arc second). the smaller, the better the details of the digital elevation model. 1" is not available everywhere but 3", however the use of 15" is discouraged due to the lack of precision.
+*hgtFile.hgt* : The hgt file can be downloaded from <http://viewfinderpanoramas.org/dem3.html>. Choose your regions than click on the interactive map to download the file. You may need to extract it. Note that there is 3 resolutions available : 1" 3" and 15" (arc second). the smaller, the better the details of the digital elevation model. 1" is not available everywhere but 3", however the use of 15" is discouraged due to the lack of precision.
 
-rDpi : it's the dpi of the final map. More means better details but increasing file size and runtime. 100 produces mostly balanced results.
+*botLeftLon, botLeftLat, topRightLong, topRightLat* : Coordinates of the bottom-left and top-right corner of the area inside of OSM file.
 
-output_name : the name of the file generated.
+*rDpi* : it's the dpi of the final map. More means better details but increasing file size and runtime. 100 produces mostly balanced results.
+
+*output_name* : the name of the file generated.
 
 As an example the command to generate the map of interlaken in examples_files/interlaken/command.txt is :
 ```bash
