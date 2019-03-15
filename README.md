@@ -6,26 +6,33 @@ Example : HD Map of interlaken made using this program :
 
 ![](https://github.com/Tywacol/EPFL_imhof/blob/master/examples_files/interlaken/interlakenhighHD300.png?raw=true)
 
-# Snake Updated 2.0
+## How it works
 
-First programming school project ! Snake game in python for the Baccalaureat
+The programs parses a compressed .osm file containing the maps elements (roads, building, lakes etc) so that its easily usable after. 2D map example from example_files/interlaken/interlaken.osm.gz :
 
-![](snake.gif)
+![](https://github.com/Tywacol/EPFL_imhof/blob/master/examples_files/interlaken/paintedMap.png?raw=true)
+
+It then create an height map using the data from the corresponding hgt file passed on argument. height map example from example_files/interlaken/N46E007.hgt :
+
+![](https://github.com/Tywacol/EPFL_imhof/blob/master/examples_files/interlaken/relief.png?raw=true)
+
+It then mixes the two files to produce a map with relief, as seen in the presentation.
+
+## Prequisite
+
+This project require Oracle JDK8 or newer to be compiled.
+On Arch-based systems it can be installed by running
+```bash
+pacman -Syu jdk8-openjdk
+```
 
 ## Installation
 
 You can clone the project with
 ```bash
-git clone git@github.com:Tywacol/snake_isn.git
+git clone git@github.com:Tywacol/EPFL_imhof.git
 ```
 
-## Prequisite
-
-This project needs python3 and tkinter to be installed.
-On Arch based systems tkinter can be installed with
-```bash
-pacman -S tk
-```
 
 ## Usage
 
