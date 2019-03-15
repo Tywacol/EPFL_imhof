@@ -2,7 +2,7 @@
 
 Java project made during my second semester at the EPFL, Switzerland. This program renders images from OpenStreetMap and height maps data.
 
-Example : Map of interlaken made using this program :
+Example : HD Map of interlaken made using this program :
 
 ![](https://github.com/Tywacol/EPFL_imhof/blob/master/examples_files/interlaken/interlakenhighHD300.png?raw=true)
 
