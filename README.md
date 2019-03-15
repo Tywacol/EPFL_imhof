@@ -4,7 +4,7 @@ Java project made during my second semester at the EPFL, Switzerland. This progr
 
 Example : Map of interlaken made using this program :
 
-[](examples_files/interlaken/interlakenhighHD300.png)
+[](https://github.com/Tywacol/EPFL_imhof/blob/master/examples_files/interlaken/interlakenhighHD300.png?raw=true)
 
 # Snake Updated 2.0
 
